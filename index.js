@@ -1,6 +1,6 @@
 function claimPoints() {
   console.log("Claim Points started");
-  let claimButton = document.querySelector(".claimable-bonus__icon");
+  const claimButton = document.querySelector(".claimable-bonus__icon");
   if (claimButton !== null) {
     claimButton.click();
     console.log("Points claimed!");
