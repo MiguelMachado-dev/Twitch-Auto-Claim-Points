@@ -1,5 +1,6 @@
+console.log("Claim Points started");
+
 function claimPoints() {
-  console.log("Claim Points started");
   const claimButton = document.querySelector(".claimable-bonus__icon");
   if (claimButton !== null) {
     claimButton.click();
@@ -7,4 +8,4 @@ function claimPoints() {
   }
 }
 
-setInterval(claimPoints, (Math.random() * 900 + 1) * 1000);
+setInterval(claimPoints, 60000); // It will check every 1 minute
